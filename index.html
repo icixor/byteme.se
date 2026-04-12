@@ -14,7 +14,10 @@
 
   <header class="header">
     <div class="container header-inner">
-      <a href="#" class="logo">Byteme<span class="logo-dot">.</span></a>
+      <a href="#" class="logo" aria-label="Byteme AB">
+        <img class="logo-mark" src="img/logo.svg" alt="" width="44" height="37" decoding="async">
+        <span class="logo-text">Byteme<span class="logo-dot">.</span></span>
+      </a>
       <nav class="nav">
         <a href="#products" data-sv="Produkter" data-en="Products">Produkter</a>
         <a href="#contact" data-sv="Kontakt" data-en="Contact">Kontakt</a>
@@ -27,7 +30,6 @@
     <div class="container">
       <h1 data-sv="Medicintekniska produkter för logopedi" data-en="Medical devices for speech therapy">Medicintekniska produkter för logopedi</h1>
       <p class="hero-sub" data-sv="Byteme AB utvecklar precisionsinstrument för klinisk diagnostik inom oral sensorik." data-en="Byteme AB develops precision instruments for clinical diagnostics in oral sensory function.">Byteme AB utvecklar precisionsinstrument för klinisk diagnostik inom oral sensorik.</p>
-      <a href="#products" class="btn" data-sv="Se produkter" data-en="View products">Se produkter</a>
     </div>
   </section>
 
@@ -38,9 +40,7 @@
 
         <article class="product-card">
           <div class="product-img">
-            <div class="product-img-placeholder">
-              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="80" rx="12" fill="#e2e8f0"/><path d="M28 52V28h24v24H28z" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="36" r="3" fill="#94a3b8"/><path d="M28 48l8-8 6 6 4-4 6 6" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <img src="img/bmos.JPG" alt="BMOS – Oral Stereognosis">
           </div>
           <div class="product-body">
             <span class="product-tag">BMOS</span>
@@ -51,9 +51,7 @@
 
         <article class="product-card">
           <div class="product-img">
-            <div class="product-img-placeholder">
-              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="80" height="80" rx="12" fill="#e2e8f0"/><path d="M28 52V28h24v24H28z" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="36" r="3" fill="#94a3b8"/><path d="M28 48l8-8 6 6 4-4 6 6" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
+            <img src="img/mftpd.JPG" alt="MfTPD – 2-Point Discrimination">
           </div>
           <div class="product-body">
             <span class="product-tag">MfTPD</span>
@@ -71,7 +69,11 @@
       <h2 data-sv="Kontakt &amp; Beställning" data-en="Contact &amp; Order">Kontakt &amp; Beställning</h2>
       <div class="contact-grid">
 
-        <form class="contact-form" id="orderForm">
+        <form class="contact-form" id="orderForm" action="https://formsubmit.co/contact@byteme.se" method="POST">
+          <input type="hidden" name="_subject" value="New inquiry from byteme.se">
+          <input type="hidden" name="_next" value="https://www.byteme.se">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none">
           <div class="form-group">
             <label for="name" data-sv="Namn" data-en="Name">Namn</label>
             <input type="text" id="name" name="name" required>
@@ -83,14 +85,6 @@
           <div class="form-group">
             <label for="organization" data-sv="Organisation" data-en="Organization">Organisation</label>
             <input type="text" id="organization" name="organization">
-          </div>
-          <div class="form-group">
-            <label for="product" data-sv="Produkt" data-en="Product">Produkt</label>
-            <select id="product" name="product">
-              <option value="" data-sv="Välj produkt..." data-en="Select product...">Välj produkt...</option>
-              <option value="BMOS - Oral Stereognosis (420€)">BMOS – Oral Stereognosi (420 €)</option>
-              <option value="MfTPD - 2-Point Discrimination (170€)">MfTPD – Tvåpunktsdiskriminering (170 €)</option>
-            </select>
           </div>
           <div class="form-group">
             <label for="message" data-sv="Meddelande" data-en="Message">Meddelande</label>

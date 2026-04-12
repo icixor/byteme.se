@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none" aria-hidden="true">
+  <defs>
+    <style>
+      .hex-ring { fill: #000000; }
+      .node { fill: #000000; }
+    </style>
+  </defs>
+  <path
+    class="hex-ring"
+    fill-rule="evenodd"
+    d="M52 20 L77.98 35 L77.98 65 L52 80 L26.02 65 L26.02 35 Z
+       M52 28 L71.05 39 L71.05 61 L52 72 L32.95 61 L32.95 39 Z"
+  />
+  <g class="nodes">
+    <circle class="node" r="5.5" cx="52" cy="20"/>
+    <circle class="node" r="5.5" cx="26.02" cy="35"/>
+    <circle class="node" r="5.5" cx="52" cy="80"/>
+    <circle class="node" r="5.5" cx="41" cy="56"/>
+    <circle class="node" r="5.5" cx="91" cy="49"/>
+    <circle class="node" r="5.5" cx="108" cy="61"/>
+  </g>
+</svg>
