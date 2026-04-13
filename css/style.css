@@ -220,13 +220,6 @@ body {
   border: 1px solid rgba(10, 31, 61, 0.12);
   border-radius: var(--radius-lg);
   overflow: hidden;
-  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
-}
-
-.product-card:hover {
-  box-shadow: var(--shadow-lg);
-  transform: translateY(-2px);
-  border-color: rgba(180, 83, 9, 0.35);
 }
 
 .product-img {
